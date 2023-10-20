@@ -555,7 +555,7 @@
               <a
                 href="https://www.instagram.com"
                 target="_blank"
-                rel="noopener no-referrer"
+                rel="noopener noreferrer"
                 aria-label="social media link"
                 class="icon-media-link footer-icons-link"
               >
@@ -568,7 +568,7 @@
               <a
                 href="https://twitter.com"
                 target="_blank"
-                rel="noopener no-referrer"
+                rel="noopener noreferrer"
                 aria-label="social media link"
                 class="icon-media-link footer-icons-link"
               >
@@ -581,7 +581,7 @@
               <a
                 href="https://www.facebook.com"
                 target="_blank"
-                rel="noopener no-referrer"
+                rel="noopener noreferrer"
                 aria-label="social media link"
                 class="icon-media-link footer-icons-link"
               >
@@ -594,7 +594,7 @@
               <a
                 href="https://www.linkedin.com"
                 target="_blank"
-                rel="noopener no-referrer"
+                rel="noopener noreferrer"
                 aria-label="social media link"
                 class="icon-media-link footer-icons-link"
               >
@@ -677,34 +677,31 @@
                 id="user-comment"
                 class="modal-input-comment"
               ></textarea>
-              <!-- <input
-                type="text"
-                name="user-comment"
-                class="modal-input-comment"
-                placeholder="Text input"
-                id="user-comment"
-              /> -->
             </div>
           </div>
+          <!-- checkbox -->
           <div class="checkbox-container">
             <input
               type="checkbox"
-              name="user-email"
-              class="checkbox"
+              name="user-privacy"
+              class="checkbox visually-hidden"
               required
+              id="user-privacy"
             />
-            <p class="modal-checkbox-consent">
-              I accept the terms and conditions of the
-              <span class="checkbox-span"
-                ><a
-                  href="https://enty.io/en-nl/create-contract?utm_term=pp&utm_source=google&utm_medium=cpc&utm_campaign=NL-Contracts-NL-ENG-PP&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEoVN14w5dd7MSqm2kueBD7vRL4VcgNjdQ5BFr6mQU8xLMKh-oUoDqBoCHugQAvD_BwE"
-                  target="_blank"
-                  rel="noopener no-referrer"
-                  aria-label="social media link"
-                  >Privacy Policy</a
-                ></span
+            <label class="modal-checkbox-consent" for="user-privacy">
+              <span class="checkbox-custom">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a
+                href="https://enty.io/en-nl/create-contract?utm_term=pp&utm_source=google&utm_medium=cpc&utm_campaign=NL-Contracts-NL-ENG-PP&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEoVN14w5dd7MSqm2kueBD7vRL4VcgNjdQ5BFr6mQU8xLMKh-oUoDqBoCHugQAvD_BwE"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="social media link"
+                >Privacy Policy</a
               >
-            </p>
+            </label>
           </div>
           <button type="submit" class="button-send-form">Send</button>
         </form>
