@@ -551,6 +551,7 @@ body {
 .footer-input {
   margin-left: 80px;
   height: 40px;
+  /* width: 264px; */
   background-color: transparent;
   padding: 8px 16px;
   border-radius: 4px;
@@ -579,6 +580,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin-left: 24px;
+  margin-right: 0;
 }
 
 .footer-submit:hover,
@@ -832,7 +834,7 @@ body {
   display: block;
   margin-bottom: 4px;
   color: var(--icon-color);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -843,7 +845,7 @@ body {
 /* checkbox */
 .modal-checkbox-consent {
   color: var(--icon-color);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
