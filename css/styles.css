@@ -544,6 +544,14 @@ body {
 /* .social-media-footer {
 } */
 /* ---------------------- INPUT -------------------------- */
+.footer-input-container {
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .ppp {
   margin-left: 80px;
 }
@@ -551,23 +559,33 @@ body {
 .footer-input {
   margin-left: 80px;
   height: 40px;
-  /* width: 264px; */
+  width: 264px;
   background-color: transparent;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--maintitle-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--maintitle-color);
 }
 
-/* .frame  */
+.footer-input::placeholder {
+  color: var(--maintitle-color);
+}
+/*   */
 
 /* Submit */
 .footer-submit {
-  display: inline-flex;
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  min-width: 165px;
+  height: 40px;
+
   border-radius: 4px;
   background-color: var(--logo-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -580,12 +598,16 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   margin-left: 24px;
-  margin-right: 0;
+  cursor: pointer;
 }
 
 .footer-submit:hover,
 .footer-submit:focus {
   background-color: var(--hover-color);
+}
+
+.frame: {
+  margin-left: 16px;
 }
 
 /* --------------------- /input -------------------------*/
@@ -913,6 +935,7 @@ body {
   margin: 0 auto;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .button-send-form:hover,
