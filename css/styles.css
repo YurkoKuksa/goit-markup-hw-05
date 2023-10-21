@@ -723,7 +723,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* -------------- дз 5 ---------------- */
+  /* ------------------------ дз 5 ---------------------- */
   padding: 72px 24px 24px;
 }
 
@@ -781,6 +781,7 @@ body {
 .modal-form-box {
   border-radius: 4px;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .modal-input {
@@ -792,8 +793,8 @@ body {
   flex-shrink: 0;
   background-color: transparent;
   margin-bottom: 8px;
-  padding-left: 44px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: transparent;
 }
 
@@ -802,7 +803,8 @@ body {
   border-color: var(--logo-color);
 }
 
-.modal-input:focus + .form-icon {
+.modal-input:focus + .form-icon,
+.modal-input:hover + .form-icon {
   fill: var(--logo-color);
 }
 
@@ -847,13 +849,14 @@ body {
 
 .form-icon {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-50%);
 }
 
-/* .modal-field {
-} */
+/* Label */
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
