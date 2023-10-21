@@ -545,6 +545,7 @@ body {
 } */
 /* ---------------------- INPUT -------------------------- */
 .footer-input-container {
+  display: flex;
 }
 
 .footer-form {
@@ -606,7 +607,7 @@ body {
   background-color: var(--hover-color);
 }
 
-.frame: {
+.frame {
   margin-left: 16px;
 }
 
